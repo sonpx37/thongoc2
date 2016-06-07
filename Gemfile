@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.1.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.13'
 
@@ -26,11 +27,21 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem "haml", ">= 3.1.7"
+# Authencication Gem for Ruby on Rails.
+gem 'devise', '~> 3.2'
+# I18n-js Gem for Ruby on Rails.
+gem 'i18n-js', '~>2.1.2'
+# Authorization
+gem 'cancan', '1.6.10'
+# Paperclip
+gem 'paperclip', '~>4.1.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
-gem "haml", ">= 3.1.7"
-gem 'devise'
+group :development do
+  gem 'byebug', '~> 8.2', '>= 8.2.2'
+end
