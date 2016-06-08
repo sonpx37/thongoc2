@@ -36,7 +36,7 @@ gem 'i18n-js', '~>2.1.2'
 gem 'cancan', '1.6.10'
 # Paperclip
 gem 'paperclip', '~>4.1.1'
-
+gem 'i18n-js', '~> 2.1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

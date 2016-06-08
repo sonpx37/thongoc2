@@ -1,0 +1,41 @@
+.menuBar{
+  height:56px;
+  width:1024px;
+  margin:2px auto 0;
+  ul{
+    float:left;
+    height:56px;
+    list-style:none;
+  }
+  li{
+    float:left;
+    height:54px;
+  }
+  li:hover{
+    background:none;
+    color:red;
+  }
+  li.active{
+    background:#0d4f7a;
+  }
+  li a{
+    color:#F2F2F2;
+    display:block;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:700;
+    height:56px;
+    padding-right:3px;
+    padding-top:15px;
+    position:relative;
+    span{
+      color:#FFF;
+      display:block;
+      line-height:25px;
+      padding:0 23px 0 20px;
+      white-space: nowrap;
+    }
+  }
+}
+.menuBar li a:hover,.menuBar li .active{background:#FFF;color:#333;font-family:Arial, Helvetica, sans-serif;font-weight:700;position:relative}
+.menuBar li a:hover span,.menuBar li a.active span{color:#333;display:block;height:25px;line-height:25px;padding:0 23px 0 20px}

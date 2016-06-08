@@ -1,0 +1,14 @@
+!!!
+%html{xmlns: "http://www.w3.org/1999/xhtml", :"xml:lang" => "en", lang: "en"}
+  %head
+    %title
+      = @page_title || 'Don nha nhanh'
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+  %body
+    = render 'layouts/header'
+    .container
+      - flash.each do |key, value|
+        %div{:class => "alert alert-#{key}"}= value
+      = yield
+    = render 'layouts/footer'
