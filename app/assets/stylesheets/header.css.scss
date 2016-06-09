@@ -1,15 +1,26 @@
-#menuBar{
+body{
+  background:url(image-path('bgmenu.png')) repeat-x center top #f9f9f9;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  position:relative
+}
+
+.menuBar{
   height:56px;
-  width:1024px;
-  margin:2px auto 0;
+  width:100%;
+  margin:auto;
+  position: relative;
+  #ulmenuBar{
+    padding-top: 15px;
+  }
   ul{
     float:left;
-    height:56px;
+    height:100%;
     list-style:none;
+    position: absolute;
   }
   li{
     float:left;
-    height:54px;
   }
   li:hover{
     background:none;
@@ -24,9 +35,8 @@
     float:left;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:700;
-    height:56px;
     padding-right:3px;
-    padding-top:15px;
+    text-decoration: none;
     position:relative;
     span{
       color:#FFF;
@@ -36,6 +46,18 @@
       white-space: nowrap;
     }
   }
+  li a:hover, li a:active{
+    background:#FFF;
+    color:#333;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:700;
+    position:relative;
+    span{
+      color:#333;
+      display:block;
+      height:25px;
+      line-height:25px;
+      padding:0 23px 0 20px;
+    }
+  }
 }
-#menuBar li a:hover,#menuBar li .active{background:#FFF;color:#333;font-family:Arial, Helvetica, sans-serif;font-weight:700;position:relative}
-#menuBar li a:hover span,#menuBar li a.active span{color:#333;display:block;height:25px;line-height:25px;padding:0 23px 0 20px}

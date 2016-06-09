@@ -1,0 +1,195 @@
+.logo-footer h1 { 
+  margin:0; 
+  border:0; 
+}
+.logo-footer h1 a {
+  word-break:break-all;
+  text-decoration:none; 
+  font-size:32px; 
+  line-height:40px;
+  color:#ffffff;
+  padding:0; 
+  border:0;
+}
+.logo-footer h1 a:hover {
+  text-decoration:none; 
+  color:#ffffff;
+}
+/* ======    footer-center   ======  */
+.footer-center {
+  padding: 70px 0 30px;
+  background:#202020; 
+}
+.footer-center .footer-block .title_block {
+  color: #999999;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  
+}
+.footer-center .footer-block .block_content .list-group {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.footer-center .footer-block .block_content .list-group li {
+  color:#696969;
+  font-size: 13px;
+  line-height: 35px;
+  overflow: hidden;
+}
+.footer-center .footer-block .block_content .toggle-footer li a {
+  color: #696969;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  display: block;
+  font-size: 13px;
+}
+.footer-center .footer-block .block_content .toggle-footer li a i {
+  margin-right: 5px;
+}
+.footer-center .footer-block .block_content .toggle-footer li a:hover {
+  color: #039944;
+}
+.footer-center .footer-block .block_content .contact-footer li{
+  margin-bottom: 10px;
+  padding-left: 45px;
+  position: relative;
+}
+.footer-center .footer-block .block_content .contact-footer li i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+}
+.footer-center .footer-block .block_content .contact-footer li i:before{
+  border: 2px solid #696969;
+color:#696969;
+display: inline-block;
+font-size: 14px;
+height: 35px;
+line-height: 31px;
+text-align: center;
+width: 35px;
+border-radius: 100%;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+-ms-border-radius: 100%;
+-o-border-radius: 100%;
+
+}
+.footer-center .footer-block .block_content .contact-footer li p{
+  line-height: 20px;
+  margin: 0;
+  display: inline-block;
+}
+#newsletter_block .des_newsletter {
+  color: #696969;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+
+#newsletter_block .des_newsletter {
+  font-weight: 300;
+  color: #555555;
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+#newsletter_block .newsletter-form {
+  position: relative;
+  border-color: #333;
+}
+#newsletter_block .newsletter-input {
+  position: relative;
+  border-color: #f1f1f1;
+  line-height: 40px;
+  font-size: 12px;
+  display: block;
+  width: calc(100% - 60px);
+  height: 40px;
+  padding: 9px 12px;
+  color: #330909;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #f1f1f1;
+  border-right: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+#newsletter_block .btn-newsletter {
+  right: 0;
+  top: 0;
+  background:#cf0404;
+  z-index: 2;
+  line-height: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  position: absolute;
+  margin: 0;
+  color: #ffffff;
+}
+#newsletter_block .btn-newsletter span {
+  font-size: 12px;
+  padding: 13px 19px 12px;
+  line-height: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+#newsletter_block .btn-newsletter span i {
+  margin-right: 5px;
+}
+/* ====== =======   footer-bottom =====  ======  */
+.footer-bottom {
+  background:#383838;
+  padding: 15px 0;
+}
+.footer-bottom .copyright p {
+  color:#696969;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 33px;
+  margin: 0;
+  text-align: center;
+}
+.footer-bottom .social ul{
+  display: inline-block;
+}
+.footer-bottom .social{
+  text-align: center;
+}
+.footer-bottom .social ul li {
+  float: left;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+
+  font-size: 13px;
+}
+.footer-bottom .social ul li a {
+  color:#696969;
+  display: inline-block;
+  font-size: 13px;
+}
+.footer-bottom .paypal {
+  text-align: right;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
