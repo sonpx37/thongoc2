@@ -1,0 +1,12 @@
+.row
+  = form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"}) do |f|
+    %h1.new-box-title.form-signin-heading.text-center= t('.please_log_in')
+    .login-box
+      = f.email_field :email, class: 'form-control', placeholder: t('.email_address'), title: t('.email_address')
+      = f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: t('.password'), title: t('.password')
+      = f.submit "Log In", class: 'btn btn-primary btn-lg btn-block'
+    .shared-links.text-center
+      = link_to t('.forgot_password'), new_password_path(resource_name)
+    .no-account
+      = t('.no_account')
+      = link_to t('.sign_up'), new_registration_path(resource_name)

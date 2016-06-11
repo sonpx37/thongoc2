@@ -1,0 +1,89 @@
+/* sign-in template */
+.form-signin {
+  max-width: 360px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-signup .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-signin .form-control:focus, .form-signin-top:focus, .form-signin-middle:focus, .form-signin-bottom:focus {
+  z-index: 2;
+}
+.form-control:focus {
+  border-color: rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+  -webkit-box-shadow: 0 0 0 1px rgba(102, 175, 233, 0.6) inset, 0 0 0 2px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: 0 0 0 1px rgba(102, 175, 233, 0.6) inset, 0 0 0 2px rgba(102, 175, 233, 0.6);
+  box-shadow: 0 0 0 1px rgba(102, 175, 233, 0.6) inset, 0 0 0 2px rgba(102, 175, 233, 0.6);
+}
+
+.form-signin-top, .form-signin-middle, .form-signin-bottom {
+  position: relative;
+}
+
+.form-signin input[type="email"], .form-signin-top {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-signin-middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
+.form-signin input[type="password"], .form-signin-bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.shared-links a {
+  background-color: #f5f5f5;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 8px 0;
+  position: relative;
+  width: 100%;
+  display: block;
+  color: #4e4e4e;
+}
+
+#new_user .shared-links a:hover {
+  background-color: #fdfdfd;
+  text-decoration: none;
+  color: #008ecf;
+}
+#new_user .shared-links a:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12) inset;
+}
+.centerme {
+  margin: 0 auto;
+  position: relative;
+  float: none;
+}

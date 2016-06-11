@@ -1,0 +1,24 @@
+.row
+  .col-sm-6.col-md-5.col-lg-4.centerme.padding-register
+    %h1.new-box-title= t('.sign_up_new')
+    .signup-box
+      = form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
+        = devise_error_messages!
+        .row
+          .col-sm-12
+            .form-group
+              = f.label :email
+              = f.email_field :email, class: 'form-control input-lg', placeholder: 'john@doe.com', title: 'john@doe.com'
+          .col-sm-6
+            .form-group
+              = f.label :password
+              = f.password_field :password, autocomplete: "off", class: 'form-control input-lg', placeholder: t('.password'), title: t('.password')
+          .col-sm-6
+            .form-group
+              = f.label :password_confirmation, t('.password_confirmation')
+              = f.password_field :password_confirmation, autocomplete: "off", class: 'form-control input-lg', placeholder: t('.password_confirmation_placeholder'), title: t('.password_confirmation')
+        .div
+          = f.submit t("defaults.continue"), class: 'btn btn-primary btn-block btn-lg'
+    .has-account.text-center
+      = t(".already_have")
+      = link_to t('.login'), new_session_path(resource_name)
