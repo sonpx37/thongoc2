@@ -11,7 +11,10 @@
  *= require_self
  *= require bootstrap.min
  *= require bootstrap-custom
+ *= require font-awesome
  *= require home
  *= require header
+ *= require chat
  *= require footer
+ *= require_tree .
  */

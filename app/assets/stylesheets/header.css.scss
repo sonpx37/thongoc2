@@ -1,63 +1,8 @@
-body{
-  background:url(image-path('bgmenu.png')) repeat-x center top #f9f9f9;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:14px;
-  position:relative
-}
-
-.menuBar{
-  height:56px;
-  width:100%;
-  margin:auto;
-  position: relative;
-  #ulmenuBar{
-    padding-top: 15px;
-  }
-  ul{
-    float:left;
-    height:100%;
-    list-style:none;
-    position: absolute;
-  }
-  li{
-    float:left;
-  }
-  li:hover{
-    background:none;
-    color:red;
-  }
-  li.active{
-    background:#0d4f7a;
-  }
-  li a{
-    color:#F2F2F2;
-    display:block;
-    float:left;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:700;
-    padding-right:3px;
-    text-decoration: none;
-    position:relative;
-    span{
-      color:#FFF;
-      display:block;
-      line-height:25px;
-      padding:0 23px 0 20px;
-      white-space: nowrap;
-    }
-  }
-  li a:hover, li a:active{
-    background:#FFF;
-    color:#333;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:700;
-    position:relative;
-    span{
-      color:#333;
-      display:block;
-      height:25px;
-      line-height:25px;
-      padding:0 23px 0 20px;
-    }
+.link-icon{
+  .inbox{
+    background:url(image-path('inbox.png')) no-repeat scroll center center;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
   }
 }

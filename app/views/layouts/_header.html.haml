@@ -1,23 +1,46 @@
-.menuBar#ddtopmenubar
-  %ul#ulmenuBar
-    %li.active
-      %a.upcase.fontsize11{:href => "index.html", :title => "Dịch vụ giúp việc gia đình và văn phòng"}
-        %span.trangchu Trang chủ
-    %li
-      %a.upcase.fontsize11{:href => "cong-ty.html", :title => "Giới thiệu"}
-        %span Giới thiệu
-    %li
-      %a.upcase.fontsize11{:href => "bang-gia.html", :title => "Bảng giá"}
-        %span Bảng giá
-    %li
-      %a.upcase.fontsize11{:href => "du-an.html", :title => "Dự án"}
-        %span Dự án
-    %li
-      %a.upcase.fontsize11{:href => "tin-tuc.html", :title => "Tin tức"}
-        %span Tin tức
-    %li
-      %a.upcase.fontsize11{:href => "tuyen-dung.html", :title => "Tuyển dụng"}
-        %span Tuyển dụng
-    %li
-      %a.upcase.fontsize11{:href => "lien-he.html", :title => "Liên hệ"}
-        %span Liên hệ
+%nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      %a.navbar-brand{:href => "#"} WebSiteName
+    %ul.nav.navbar-nav
+      %li.active
+        = link_to t('.home_page'), home_index_path
+      %li.dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          = t(".introduce")
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "#"} Page 1-1
+          %li
+            %a{:href => "#"} Page 1-2
+          %li
+            %a{:href => "#"} Page 1-3
+      %li
+        = link_to t(".price"), home_index_path
+      %li
+        = link_to t(".recruitment"), home_index_path
+    - unless current_user      
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: new_user_session_path()}
+            %span.glyphicon.glyphicon-user
+            = t(".sign_in")
+        %li
+          %a{href: new_user_registration_path()}
+            %span.glyphicon.glyphicon-log-in
+            = t(".sign_up")
+    - else
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          - if current_user.is_admin?
+            - @users.each_with_index do |user, index|
+              %a.link-icon.messages.start-conversation{"data-sid" => current_user.id, "data-rip" => user.id, href: "#"}
+                .inbox
+          - else
+            %a.link-icon.messages.start-conversation{"data-sid" => current_user.id, "data-rip" => User.check_admin?.try(:id), href: "#"}
+              .inbox
+        %li
+          = link_to t(".profile"), edit_user_registration_path
+        %li
+          = link_to t(".log_out"), destroy_user_session_path, method: "delete"

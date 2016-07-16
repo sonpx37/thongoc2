@@ -22,3 +22,17 @@
 en:
   defaults:
     continue: "Continue"
+  layouts:
+    header:
+      sign_in: "Sign In"
+      sign_up: "Sign Up"
+      home_page: "Home Page"
+      introduce: "Introduce"
+      price: "Price"
+      recruitment: "Recruitment"
+      profile: "Profile"
+      log_out: "Sign Out"
+    footer:
+      faqs: "FAQ"
+      contact_us: "Contact Us"
+      terms_of_service: "Terms of Service"
