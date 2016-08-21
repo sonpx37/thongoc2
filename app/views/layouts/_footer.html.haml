@@ -5,81 +5,36 @@
         .row
           .col-md-3.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
             #block_links_footer_3.footer-block
-              %h4.title_block Liên kết
+              %h4.title_block= t(".contact_us")
               .block_content
                 %ul.contact-footer.list-group.bullet
                   %li
                     %i.fa.fa-map-marker &nbsp;
-                    %p - Địa chỉ:  56 Vân côi, Phường 7, Quận Tân Bình, Tp. Hồ Chí Minh
+                    %p= t(".address")
                   %li
                     %i.fa.fa-phone &nbsp;
-                    %p - Điện thoại: 04903000000
+                    %p= t(".phone_number")
                   %li
                     %i.fa.fa-envelope &nbsp;
                     %p
-                      \- Địa chỉ email:
-                      %a{:href => "#"} mail@gmail.com
+                      %a{:href => "#"}= t(".email")
           .col-md-3.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
             #block_links_footer_1.footer-block
-              %h4.title_block Thông tin hỗ trợ
+              %h4.title_block= t(".share")
               .block_content
                 %ul.toggle-footer.list-group.bullet
                   %li.item
-                    %a{:href => "pages/index.html", :title => "Hướng dẫn mua hàng"}
+                    %a{:href => "#", :title => "Facebook"}
                       %i.fa.fa-caret-right>
-                      Hướng dẫn mua hàng
+                      = t(".share_facebook")
                   %li.item
-                    %a{:href => "pages/index.html", :title => "Chính sách bảo hành"}
+                    %a{:href => "#", :title => "Google Plus"}
                       %i.fa.fa-caret-right>
-                      Chính sách bảo hành
-                  %li.item
-                    %a{:href => "pages/index.html", :title => "Giao hàng và thánh toán"}
-                      %i.fa.fa-caret-right>
-                      Giao hàng và thánh toán
-                  %li.item
-                    %a{:href => "pages/index.html", :title => "Điều khoản sử dụng"}
-                      %i.fa.fa-caret-right>
-                      Điều khoản sử dụng
-          .col-md-3.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
+                      = t(".share_google_plus")
+          .col-md-6.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
             #block_links_footer_2.footer-block
-              %h4.title_block Dịch vụ khách hàng
-              .block_content
-                %ul.toggle-footer.list-group.bullet
-                  %li.item
-                    %a{:href => "pages/index.html", :title => "Giới thiệu về công ty"}
-                      %i.fa.fa-caret-right>
-                      Giới thiệu về công ty
-                  %li.item
-                    %a{:href => "pages/index.html", :title => "Tuyển dụng"}
-                      %i.fa.fa-caret-right>
-                      Tuyển dụng
-                  %li.item
-                    %a{:href => "pages/index.html", :title => "Góp ý và khiếu nại"}
-                      %i.fa.fa-caret-right>
-                      Góp ý và khiếu nại
-                  %li.item
-                    %a{:href => "pages/lien-he.html", :title => "Liên hệ"}
-                      %i.fa.fa-caret-right>
-                      Liên hệ
-          .col-md-3.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
-            #newsletter_block.footer-block
-              %h4.title_block
-                Bản tin
-              .block_content
-                %form#mc-embedded-subscribe-form.contact-form{"accept-charset" => "UTF-8", :action => "http://logesta-shop.myharavan.com/account/contact", :method => "post"}
-                  .des_newsletter
-                    Đăng Ký Thành Viên Để Nhận Bản Tin Mỗi Ngày:
-                  %input{:name => "form_type", :type => "hidden", :value => "customer"}
-                    %input{:name => "utf8", :type => "hidden", :value => "✓"}
-                      %input#contact_tags{:name => "contact[tags]", :type => "hidden", :value => "khách hàng tiềm năng,Bản tin"}
-                        %input#newsletter-first-name{:name => "contact[first_name]", :type => "hidden", :value => "Người đăng ký"}
-                          %input#newsletter-last-name{:name => "contact[last_name]", :type => "hidden", :value => ""}
-                            .newsletter-form
-                              %input#mail.newsletter-input.form-control.input-lg{:name => "contact[email]", :placeholder => "Nhập email của bạn..", :type => "email"}
-                                %button.btn-newsletter{:type => "submit"}
-                                  %span
-                                    %i.fa.fa-envelope>
-                                    Gửi
+              %h4.title_block= t(".address_map")
+              #googleMap
   .footer-bottom
     .container
       .row
@@ -87,6 +42,4 @@
           .col-xs-12.wow.animated.fadeInLeft{"data-wow-delay" => "150ms"}
             .copyright
               %p
-                Copyright &copy; 2016 Don Dep Nhanh.
-                = succeed "." do
-                  %a{:href => "https://www.dondepnhanh.com/", :target => "_blank"}
+                Copyright &copy; 2016 Mam non Tho Ngoc

@@ -1,7 +1,5 @@
 %nav.navbar.navbar-inverse
   .container-fluid
-    .navbar-header
-      %a.navbar-brand{:href => "#"} WebSiteName
     %ul.nav.navbar-nav
       %li.active
         = link_to t('.home_page'), home_index_path
@@ -17,9 +15,17 @@
           %li
             %a{:href => "#"} Page 1-3
       %li
-        = link_to t(".price"), home_index_path
+        = link_to t(".education_program"), home_index_path 
       %li
-        = link_to t(".recruitment"), home_index_path
+        = link_to t(".library"), home_index_path
+      %li
+        = link_to t(".admissions"), home_index_path
+      %li
+        = link_to t(".parent"), home_index_path
+      %li
+        = link_to t(".student"), home_index_path
+      %li
+        = link_to t(".contact_us"), home_index_path
     - unless current_user      
       %ul.nav.navbar-nav.navbar-right
         %li

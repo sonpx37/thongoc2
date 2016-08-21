@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.1.8"
+ruby "2.1.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.13'
 
@@ -37,6 +37,8 @@ gem 'cancan', '1.6.10'
 # Paperclip
 gem 'paperclip', '~>4.1.1'
 gem 'i18n-js', '~> 2.1.2'
+#seo
+gem 'meta-tags'
 #chat
 gem 'private_pub'
 gem 'thin'

@@ -1,0 +1,35 @@
+en:
+  defaults:
+    continue: "Tiếp tục"
+  home:
+    index:
+      title: "Mầm non thỏ ngọc"
+      description: "Trường Mầm non Thỏ Ngọc. Gần chợ dĩ an 2, bình đường, dĩ an, bình dương"
+      keywords: "mam non, truong mam non, mam non tho ngoc, mam non di an, mam non di an 2, tieng anh mam non, nhac thieu nhi, giai tri cho tre, giao duc tre, dinh duong tre em,chua cac benh tre em thuong gap, giao an mam non"
+      admissions_inform: ""
+  layouts:
+    header:
+      sign_in: "Đăng Nhập"
+      sign_up: "Đăng Ký"
+      home_page: "Trang Chủ"
+      introduce: "Giới thiệu"
+      education_program: "Chương Trình Giảng Dạy"
+      library: "Thư Viện Hình Ảnh"
+      admissions: "Tuyển Sinh"
+      recruitment: "Tuyển Dụng"
+      contact_us: "Liên Hệ"
+      student: "Góc Của Bé"
+      parent: "Góc Phụ Huynh"
+      profile: "Trang Cá Nhân"
+      log_out: "Thoát"
+    footer:
+      faqs: "Câu Hỏi Thường Gặp"
+      contact_us: "Liên Hệ"
+      terms_of_service: "Điều Khoản"
+      address: "Địa chỉ: Gần chợ dĩ an 2, ấp Bình Đường 1, Dĩ An, Bình Dương"
+      phone_number: "Điện thoại: 01677450261"
+      email: "Email: mamnonthongoc@gmail.com"
+      share: "Chia Sẻ Liên Kết"
+      share_facebook: "Facebook"
+      share_google_plus: "Google +"
+      address_map: "Địa Chỉ Liên hệ"

@@ -1,0 +1,66 @@
+#myCarousel.carousel.slide{"data-ride" => "carousel"}
+  / Indicators
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+  / Wrapper for slides
+  .carousel-inner{:role => "listbox"}
+    .item.active
+      = image_tag("slide1.jpg", alt: "home image", class: "image-slilder")
+    .item
+      = image_tag("slide2.jpg", alt: "home image", class: "image-slilder")
+    .item
+      = image_tag("slide3.jpg", alt: "home image", class: "image-slilder")
+    .item
+      = image_tag("slide4.jpg", alt: "home image", class: "image-slilder")
+  / Left and right controls
+  %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+    %span.sr-only Previous
+  %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+    %span.sr-only Next
+
+%span#admissions_inform
+  %strong
+                                                                                         THÔNG BÁO
+    %br/
+    %p{:style => "text-align: justify;"}
+                                                                   Về việc tuyển sinh năm học mới 2016 -2017
+    %br/
+    %br/
+    Nhằm đảm bảo kế hoạch hoạt động trong năm học sắp đến, nhà trường dự kiến tuyển sinh các cháu vào học tại trường như sau:
+    %br/
+    %strong
+        I. Đối tượng tuyển sinh: tất cả các bé từ 1 -5 tuổi
+      %br/
+     
+    %strong
+      II. Số lượng: 25 cháu
+      %br/
+     
+    %strong>
+      III. Ngày bán và nhận hồ sơ:
+      %br/
+         Bán và nhận hồ sơ kể từ ngày 5/5/2016
+    %br/
+    = succeed "\u{a0}\u{a0}\u{a0}\u{a0}" do
+      %strong
+          IV. Thời gian khai giảng lớp mới: 05/09/2016
+        %br/
+    %br/
+    %br/
+       Trân trọng kính báo.
+    %br/
+    %br/
+                                                                                                                        
+    %strong
+      HIỆU TRƯỞNG
+      %br/
+                                                                                                                        NGÔ THỊ GIANG
+      %br/
+      %br/
+
+

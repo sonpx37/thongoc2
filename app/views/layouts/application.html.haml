@@ -4,9 +4,10 @@
     %meta{charset: "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
     %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge"}/
-    %title
+    = display_meta_tags site: "", description: "", keywords: ""
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
+    %script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkHV7MJOnRCBCp--YHA-f_T-5yHAFEW6I"}
     = csrf_meta_tags
 
   %body
