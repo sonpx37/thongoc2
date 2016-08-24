@@ -10,11 +10,14 @@
     google.maps.event.addDomListener window, 'load', @showMap
 
   showMap: ->
+    myCenter = new (google.maps.LatLng)(51.508742, -0.120850)
     mapProp = 
-      center: new (google.maps.LatLng)(51.508742, -0.120850)
+      center: myCenter
       zoom: 5
       mapTypeId: google.maps.MapTypeId.ROADMAP
     map = new (google.maps.Map)(document.getElementById('googleMap'), mapProp)
+    marker = new (google.maps.Marker)(position: myCenter)
+    marker.setMap map
 
 $ ->
   homePage.init()
