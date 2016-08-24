@@ -5,4 +5,10 @@ Homy::Application.routes.draw do
   resources :conversations do
     resources :messages
   end
+
+  resources :admissions do
+    collection do
+      get :tuyen_sinh
+    end
+  end
 end
