@@ -1,0 +1,73 @@
+// Place all the styles related to the admissions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.box-icon-7 .box-icon-7-left {
+    display: block;
+    width: 50px;
+    height: 60px;
+    background-image: url(image-path('icon-box-7-left.png'));
+    position: absolute;
+    left: 20px;
+    top: -11px;
+    z-index: 2;
+}
+
+.box-icon-7 .box-icon-7-right {
+    display: block;
+    width: 50px;
+    height: 60px;
+    background-image: url(image-path('icon-box-7-right.png'));
+    position: absolute;
+    right: 20px;
+    top: -11px;
+    z-index: 2;
+}
+
+.box h1.box-title {
+    font-size: 18px;
+    font-family: 'UVNVan_B';
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    height: 47px;
+    padding: 5px 5px 0px 5px;
+    margin: 0px;
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-top-left-radius: 15px;
+    border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-top-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.box h2.box-title, .box h1.box-title, .box p.box-title {
+    background-position: 20px 0px;
+    background-repeat: no-repeat;
+}
+
+.box-three-column .box-title span, .box-two-column .box-title span, .box-one-column .box-title span, .box-default .box-title span {
+    display: block;
+    border: dashed 1px rgba(255,255,255,0.5);
+    border-bottom: 0px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 9px;
+    font-size: 18px;
+    font-family: 'UVNVan_B';
+    font-weight: 700;
+    color: #fff;
+    padding-left: 90px;
+}
+
+.box-green {
+  position: relative;
+  .box-title{
+    background-color: #15a458;
+  }
+}
+.m-bottom-top-small{
+  margin-top: 20px;
+}

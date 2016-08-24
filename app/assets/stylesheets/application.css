@@ -16,5 +16,5 @@
  *= require header
  *= require chat
  *= require footer
- *= require_tree .
+ *= require admissions
  */
