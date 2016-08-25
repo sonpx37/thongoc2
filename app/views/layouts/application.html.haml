@@ -8,7 +8,7 @@
     = display_meta_tags site: "", description: "", keywords: ""
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
-    %script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDkHV7MJOnRCBCp--YHA-f_T-5yHAFEW6I"}
+    %script{src: "http://maps.googleapis.com/maps/api/js"}
     = csrf_meta_tags
 
   %body
@@ -22,3 +22,12 @@
     
     %audio#chatAudio
       %source{src: "/assets/notification.mp3", type: "audio/mpeg"}
+    #fb-root
+:javascript
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=867948359998907";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));

@@ -18,23 +18,16 @@
                     %i.fa.fa-envelope &nbsp;
                     %p
                       %a{:href => "#"}= t(".email")
-          .col-md-3.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
+          .col-md-4.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
             #block_links_footer_1.footer-block
               %h4.title_block= t(".share")
               .block_content
-                %ul.toggle-footer.list-group.bullet
-                  %li.item
-                    %a{:href => "#", :title => "Facebook"}
-                      %i.fa.fa-caret-right>
-                      = t(".share_facebook")
-                  %li.item
-                    %a{:href => "#", :title => "Google Plus"}
-                      %i.fa.fa-caret-right>
-                      = t(".share_google_plus")
-          .col-md-6.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
+                .fb-page{"data-adapt-container-width" => "true", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/caongua.net/",  "data-width"=>"380", "data-hide-cover"=>"false", "data-show-facepile"=>"false", "data-show-posts"=>"false"}
+
+          .col-md-5.col-sm-6.col-xs-12.wow.animated.fadeInUp{"data-wow-delay" => "100ms"}
             #block_links_footer_2.footer-block
               %h4.title_block= t(".address_map")
-              #googleMap
+              #googleMap{style: "width: 100%; height: 130px"}
   .footer-bottom
     .container
       .row
@@ -43,3 +36,27 @@
             .copyright
               %p
                 Copyright &copy; 2016 Mam non Tho Ngoc
+
+:javascript
+  var initialize, marker, myCenter;
+
+  myCenter = new google.maps.LatLng(10.881922, 106.758589);
+
+  marker = void 0;
+
+  initialize = function() {
+    var marker;
+    var map, mapProp;
+    mapProp = {
+      center: myCenter,
+      zoom: 17
+    };
+    map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
+    marker = new google.maps.Marker({
+      position: myCenter,
+      map: map,
+      title: 'Trường mầm non tư thục Thỏ Ngọc'
+    });
+    marker.setMap(map);
+  };
+  google.maps.event.addDomListener(window, 'load', initialize);

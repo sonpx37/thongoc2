@@ -12,7 +12,7 @@
             %strong= t(".thong_bao").titleize
         %p
           %strong
-            %span{:style => "font-size: 18px;"}= t(".nam_hoc")
+            %span{:style => "font-size: 18px;"}= t(".nam_hoc", year:  Time.zone.now.year, next_year: Time.zone.now.year + 1)
         %p{:style => "text-align: justify;"}
           %span{:style => "font-family: arial, helvetica, sans-serif;"}
             %em= t(".do_tuoi")

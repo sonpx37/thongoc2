@@ -3,17 +3,8 @@
     %ul.nav.navbar-nav
       %li.active
         = link_to t('.home_page'), home_index_path
-      %li.dropdown
-        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-          = t(".introduce")
-          %span.caret
-        %ul.dropdown-menu
-          %li
-            %a{:href => "#"} Page 1-1
-          %li
-            %a{:href => "#"} Page 1-2
-          %li
-            %a{:href => "#"} Page 1-3
+      %li
+        = link_to  t(".introduce"), home_index_path 
       %li
         = link_to t(".education_program"), home_index_path 
       %li

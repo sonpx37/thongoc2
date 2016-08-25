@@ -6,7 +6,6 @@ en:
       title: "Mầm non thỏ ngọc"
       description: "Trường Mầm non Thỏ Ngọc. Gần chợ dĩ an 2, bình đường, dĩ an, bình dương"
       keywords: "mam non, truong mam non, mam non tho ngoc, mam non di an, mam non di an 2, tieng anh mam non, nhac thieu nhi, giai tri cho tre, giao duc tre, dinh duong tre em,chua cac benh tre em thuong gap, giao an mam non"
-      admissions_inform: ""
   layouts:
     header:
       sign_in: "Đăng Nhập"
@@ -26,7 +25,7 @@ en:
       faqs: "Câu Hỏi Thường Gặp"
       contact_us: "Liên Hệ"
       terms_of_service: "Điều Khoản"
-      address: "Địa chỉ: Gần chợ dĩ an 2, ấp Bình Đường 1, Dĩ An, Bình Dương"
+      address: "Địa chỉ: 82/24, ấp Bình Đường 1, Dĩ An, Bình Dương (Gần chợ dĩ an 2)"
       phone_number: "Điện thoại: 01677450261"
       email: "Email: mamnonthongoc@gmail.com"
       share: "Chia Sẻ Liên Kết"
@@ -35,8 +34,11 @@ en:
       address_map: "Địa Chỉ Liên hệ"
   admissions:
     tuyen_sinh:
+      title: "Kế hoạch tuyển sinh năm học %{year}"
+      description: "Trường Mầm non Thỏ Ngọc tốt nhất tại dĩ an, tân uyên tuyển sinh liên tục"
+      keywords: "tuyen sinh tre tu 12 thang - 36 thang, lien tuc tuyen sinh, tuyen sinh tre mam non"
       thong_bao: "Thông báo tuyển sinh"
-      nam_hoc: "Năm học 2016-2017"
+      nam_hoc: "Năm học %{year}-%{next_year}"
       do_tuoi: "Trường Mầm non Thỏ Ngọc thông báo kế hoạch tuyển sinh của nhà trường ở các độ tuổi như sau:"
       doi_tuong: " I. Đối tượng tuyển sinh:"
       do_tuoi_nha_tre: "Nhà trường  tuyển sinh các cháu ở độ tuổi nhà trẻ từ 13 –  36 tháng "
