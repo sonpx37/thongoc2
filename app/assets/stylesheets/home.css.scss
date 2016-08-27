@@ -64,3 +64,141 @@ h1.new-box-title {
     height: 300px;
   }
 }
+
+/* css cho tin tuc va goc kinh nghiem */
+.box-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+.box-icon-1 {
+    background: url(image_path('box-icon-1.png')) no-repeat;
+    display: block;
+    height: 45px;
+    left: 20px;
+    position: absolute;
+    top: 0px;
+    width: 45px;
+    z-index: 2;
+}
+.bg-color-1 {
+    background: #d73787;
+}
+.box-icon-2 {
+    background: url(image_path('box-icon-2.png')) no-repeat;
+    display: block;
+    height: 45px;
+    left: 20px;
+    position: absolute;
+    top: 0px;
+    width: 45px;
+    z-index: 2;
+}
+
+.box-title {
+    margin: 0;
+    padding: 5px 5px 0px 5px;
+    height: 47px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    -webkit-border-top-right-radius: 15px;
+    span{
+      display: block;
+      text-align: center;
+      padding: 9px 0px;
+      border-bottom: none;
+      border-top-left-radius: 15px;
+      -moz-border-radius-topleft: 15px;
+      -webkit-border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      -moz-border-radius-topright: 15px;
+      -webkit-border-top-right-radius: 15px;
+      a{
+        font-family: 'UVNVAN_B';
+        font-size: 18px;
+        color: #fff;
+        position: relative;
+        z-index: 9;
+        display: block;
+      }
+    }
+}
+
+.box-content {
+    margin: 0;
+    padding: 12px 18px;
+    min-height: 220px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+}
+
+.cpost img {
+    width: 120px;
+    height: 85px;
+    margin: 0 15px 5px 0;
+    float: left;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+.cpost-title {
+    color: #41abba;
+}
+
+.cpost-title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cpost-des {
+    margin-bottom: 15px;
+}
+.line-block {
+    width: 100%;
+    height: 5px;
+    background: url(image_path("bg_line.png")) repeat-x;
+}
+.cpost-more {
+    margin: 10px 0px;
+    padding: 0px;
+}
+.ico-cpost-more {
+    width: 30px;
+    height: 15px;
+    margin-top: 3px;
+    display: block;
+    float: left;
+    background: url(image_path("icon_cpost_more.png")) no-repeat;
+}
+.cpost-more li a {
+    color: #41abba;
+}
+
+.cpost-more li a {
+    display: block;
+    font-size: 14px;
+}
+a:link, a:visited {
+    color: #41abba;
+}
+a:link, a:visited {
+    font-size: 13px;
+    transition: color 0.3s ease-in-out 0s;
+}
+.cpost-date {
+    color: #999;
+}
+.news-experience{
+  margin: 20px 0px;
+}

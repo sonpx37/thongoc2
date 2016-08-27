@@ -32,7 +32,7 @@ en:
       share_facebook: "Facebook"
       share_google_plus: "Google +"
       address_map: "Địa Chỉ Liên hệ"
-  admissions:
+  abouts:
     tuyen_sinh:
       title: "Kế hoạch tuyển sinh năm học %{year}"
       description: "Trường Mầm non Thỏ Ngọc tốt nhất tại dĩ an, tân uyên tuyển sinh liên tục"

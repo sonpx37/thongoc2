@@ -1,3 +1,18 @@
+.header
+  .row
+    .logo.col-xs-2
+      %h1
+        %a{:href => "/", :title => "Mầm non Thỏ Ngọc"}
+          = image_tag('logomamnon.png', alt:"Mầm non tốt nhất dĩ an, tân uyên bình dương", class: "")
+    .topadv.col-xs-12
+      %p.phong_gd
+        %a{:href => '#', :target => "_blank"}
+          %span PHÒNG GIÁO DỤC VÀ ĐÀO TẠO DĨ AN
+      %p.ten_truong
+        %span
+          %strong TRƯỜNG MẦM NON THỎ NGỌC
+  .clear
+
 %nav.navbar.navbar-inverse
   .container-fluid
     %ul.nav.navbar-nav
@@ -10,7 +25,7 @@
       %li
         = link_to t(".library"), home_index_path
       %li
-        = link_to t(".admissions"), tuyen_sinh_admissions_path
+        = link_to t(".admissions"), tuyen_sinh_abouts_path
       %li
         = link_to t(".parent"), home_index_path
       %li

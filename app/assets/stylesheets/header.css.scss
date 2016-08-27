@@ -1,8 +1,65 @@
 .link-icon{
   .inbox{
-    background:url(image-path('inbox.png')) no-repeat scroll center center;
+    background:url(image-path('inbox.png')) no-repeat scroll center;
     width: 30px;
     height: 20px;
     display: inline-block;
   }
+}
+.header{
+   background:url(image-path('bg_header.jpg')) no-repeat scroll center ;
+   position: relative;
+   background-size: 100%;
+   margin: 0 -5px 0 -5px;
+  .logo{
+    left: 10px;
+    position: absolute;
+    width: 200px;
+    h1{
+      color: #414f5b;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 70px;
+      white-space: nowrap;
+    }
+    img{
+      vertical-align: middle;
+      width: 0px;
+    }
+  }
+  .topadv{
+    padding-top: 46px;
+    margin: auto;
+    text-shadow: 2px 0 0 #fff,-2px 0 0 #fff,0 2px 0 #fff,0 -2px 0 #fff,1px 1px #fff,-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff;
+   .phong_gd{
+      line-height: 21px; 
+      text-align: center; 
+      color: rgb(61, 97, 198);
+      font-weight: 900;
+      span{
+        font-size: 18px;
+      }
+    }
+    .ten_truong{
+      line-height: 25px; 
+      text-align: center; 
+      color: rgb(255, 0, 50);
+       font-weight: 900;
+       span{
+        font-size:25px;
+       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+      height: 167px;
+      .logo{
+        img{
+          width: 100%;
+          margin-top: -16px;
+        }
+      }
+    }
 }

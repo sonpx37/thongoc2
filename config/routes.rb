@@ -6,7 +6,7 @@ Homy::Application.routes.draw do
     resources :messages
   end
 
-  resources :admissions do
+  resources :abouts do
     collection do
       get :tuyen_sinh
     end

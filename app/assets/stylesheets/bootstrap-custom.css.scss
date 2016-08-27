@@ -87,3 +87,12 @@
   position: relative;
   float: none;
 }
+.navbar-inverse{
+  background-color: #15a458;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: #15a458;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+}

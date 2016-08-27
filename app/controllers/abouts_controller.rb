@@ -1,4 +1,4 @@
-class AdmissionsController < ApplicationController
+class AboutsController < ApplicationController
 
   def tuyen_sinh
      set_meta_tags title: t(".title", year:  Time.zone.now.year),
