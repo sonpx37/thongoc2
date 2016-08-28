@@ -1,4 +1,5 @@
 Homy::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   get "home/index"
   devise_for :users
   root to: "home#index"
@@ -11,4 +12,5 @@ Homy::Application.routes.draw do
       get :tuyen_sinh
     end
   end
+  resources :news
 end

@@ -1,0 +1,7 @@
+= form_for @post, url: {:controller => "news", :action => "create"}, method: "post" do |f|
+  = f.text_field :title
+  = f.cktext_area :body, :class => "form-control"
+  .panel-footer
+  .clearfix.align-r
+    = link_to t("btn.cancel"), root_path(), class: "btn btn-default"
+    = f.submit t('btn.save'), class: "btn btn-primary"
