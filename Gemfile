@@ -35,7 +35,7 @@ gem 'i18n-js', '~>2.1.2'
 # Authorization
 gem 'cancan', '1.6.10'
 # Paperclip
-gem 'paperclip'
+gem 'paperclip', '~>4.1.1'
 gem 'i18n-js', '~> 2.1.2'
 #seo
 gem 'meta-tags'
@@ -54,6 +54,6 @@ group :development do
 end
 
 gem 'ckeditor', '~> 4.2'
-gem 'paperclip-googledrive'
+gem 'paperclip-googledrive-new'
 gem 'google_drive', '~> 0.3.10'
 gem 'google-api-client', '0.8.2', require: 'google/api_client'

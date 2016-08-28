@@ -6,6 +6,9 @@ en:
       title: "Mầm non thỏ ngọc"
       description: "Trường Mầm non Thỏ Ngọc. Gần chợ dĩ an 2, bình đường, dĩ an, bình dương"
       keywords: "mam non, truong mam non, mam non tho ngoc, mam non di an, mam non di an 2, tieng anh mam non, nhac thieu nhi, giai tri cho tre, giao duc tre, dinh duong tre em,chua cac benh tre em thuong gap, giao an mam non"
+  btn:
+    cancel: "Hủy"
+    save: "Lưu"
   layouts:
     header:
       sign_in: "Đăng Nhập"

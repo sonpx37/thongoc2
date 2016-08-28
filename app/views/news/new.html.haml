@@ -1,5 +1,7 @@
 = form_for @post, url: {:controller => "news", :action => "create"}, method: "post" do |f|
+  = label_tag "Tiêu Đề", nil,  class: "new_title"
   = f.text_field :title
+  = label_tag "Nội Dung", nil, class: "new_content"
   = f.cktext_area :body, :class => "form-control"
   .panel-footer
   .clearfix.align-r
