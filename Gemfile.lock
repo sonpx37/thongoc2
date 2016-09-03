@@ -234,7 +234,7 @@ DEPENDENCIES
   jquery-rails
   meta-tags
   paperclip (~> 4.1.1)
-  paperclip-googledrive-new
+  paperclip-googledrive-new (~> 1.0)
   pg (~> 0.18.2)
   private_pub
   rails (= 4.0.13)

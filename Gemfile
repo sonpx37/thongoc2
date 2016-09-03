@@ -54,6 +54,6 @@ group :development do
 end
 
 gem 'ckeditor', '~> 4.2'
-gem 'paperclip-googledrive-new'
+gem 'paperclip-googledrive-new', '~> 1.0'
 gem 'google_drive', '~> 0.3.10'
 gem 'google-api-client', '0.8.2', require: 'google/api_client'
