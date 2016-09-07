@@ -1,0 +1,48 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge"}
+    = favicon_link_tag 'logo.jpg'
+    = display_meta_tags site: "", description: "", keywords: ""
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    %script{src: "https://maps.googleapis.com/maps/api/js"}
+    = csrf_meta_tags
+
+  %body
+    = render 'layouts/header'
+    .container
+      - flash.each do |key, value|
+        %div{class: "alert alert-#{key}"}= value
+      .row
+        .col-sm-3.col-md-3
+          #accordion.panel-group
+            .panel.panel-default
+              .panel-heading
+                %h4.panel-title
+                  %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+                    %span.glyphicon.glyphicon-folder-close>
+                    = link_to t("admin.homes.tin_tuc"), admin_news_index_path()
+              #collapseOne.panel-collapse.collapse.in
+                .panel-body
+                  %table.table
+                    %tr
+                      %td
+                        %span.glyphicon.glyphicon-user.text-primary
+                        = link_to  t("admin.homes.hoc_sinh"), admin_news_index_path({type: "hoc_sinh"})
+                    %tr
+                      %td
+                        %span.glyphicon.glyphicon-user.text-success
+                        = link_to  t("admin.homes.phu_huynh"), admin_news_index_path({type: "phu_huynh"})
+                      %tr
+                        %td
+                          %span.fa.fa-file-text-o.text-success
+                          = link_to  t("admin.homes.su_kien"), admin_news_index_path({type: "su_kien"})
+
+        .col-sm-9.col-md-9
+          = yield
+
+    = render 'layouts/footer'
+

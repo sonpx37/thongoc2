@@ -7,6 +7,7 @@ en:
       description: "Trường Mầm non Thỏ Ngọc. Gần chợ dĩ an 2, bình đường, dĩ an, bình dương"
       keywords: "mam non, truong mam non, mam non tho ngoc, mam non di an, mam non di an 2, tieng anh mam non, nhac thieu nhi, giai tri cho tre, giao duc tre, dinh duong tre em,chua cac benh tre em thuong gap, giao an mam non"
   btn:
+    new: "Tạo Mới"
     cancel: "Hủy"
     save: "Lưu"
   layouts:
@@ -54,3 +55,12 @@ en:
       ngay_nhap_hoc: "Sau khi hoàn tất hồ sơ và đóng học phí, các bé sẽ vào học trong ngày hôm sau."
       ke_hoach_tuyen_sinh: "Trên đây là kế hoạch tuyển sinh của nhà trường, kính thông báo đến các bậc phụ huynh được rõ, rất mong được đón tiếp các quý phụ huynh."
       bo_phan_tuyen_sinh: " BỘ PHẬN TUYỂN SINH "
+  admin:
+    homes:
+      tin_tuc: "Tin Tức"
+      hoc_sinh: "Học Sinh"
+      phu_huynh: "Phụ Huynh"
+      su_kien: "Sự Kiện"
+    news:
+        success: "Bạn vừa tạo thành công bài viết."
+        error: "Có lỗi xảy ra. Vui lòng thử lại."

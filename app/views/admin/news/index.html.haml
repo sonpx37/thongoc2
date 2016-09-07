@@ -1,0 +1,2 @@
+- unless params[:type].present?
+  = link_to  t("btn.new"), new_admin_news_path(type: params[:type]), class: "btn btn-primary btn-news"

@@ -16,6 +16,7 @@
  *= require header
  *= require chat
  *= require footer
- *= require admissions
+ *= require tuyen_sinh
  *= require news
+ *= require_tree .
  */

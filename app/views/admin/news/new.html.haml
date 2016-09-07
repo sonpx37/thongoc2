@@ -1,0 +1,11 @@
+= form_for @post, url: {:controller => "news", :action => "create"}, method: "post" do |f|
+  = label_tag "Tiêu Đề", nil,  class: "new_title"
+  = f.text_field :title
+  = label_tag "Chuyên Mục", nil,  class: "new_category m-d-block"
+  = select_tag "category", options_from_collection_for_select(@categories, "id", "cat_name"), class: "m-d-block m-bottom-small"
+  = label_tag "Nội Dung", nil, class: "new_content"
+  = f.cktext_area :body, :class => "form-control"
+  .panel-footer
+  .clearfix.align-r.m-bottom-small
+    = link_to t("btn.cancel"), root_path(), class: "btn btn-default"
+    = f.submit t('btn.save'), class: "btn btn-primary"

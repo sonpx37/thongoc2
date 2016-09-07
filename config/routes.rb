@@ -13,4 +13,10 @@ Homy::Application.routes.draw do
     end
   end
   resources :news
+
+  # admin
+  namespace :admin do
+    resources :homes, only: [:index]
+    resources :news
+  end
 end

@@ -46,6 +46,7 @@
       %ul.nav.navbar-nav.navbar-right
         %li
           - if current_user.is_admin?
+            = link_to t(".admin"), admin_homes_path()
             - @users.each_with_index do |user, index|
               %a.link-icon.messages.start-conversation{"data-sid" => current_user.id, "data-rip" => user.id, href: "#"}
                 .inbox
