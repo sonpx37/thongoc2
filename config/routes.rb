@@ -12,7 +12,13 @@ Homy::Application.routes.draw do
       get :tuyen_sinh
     end
   end
-  resources :news
+  resources :news do
+    collection do
+      get :phu_huynh
+      get :hoc_sinh
+      get :tin_tuc
+    end
+  end
 
   # admin
   namespace :admin do

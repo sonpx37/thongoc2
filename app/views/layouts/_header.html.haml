@@ -19,9 +19,9 @@
       %li.active
         = link_to t('.home_page'), home_index_path
       %li
-        = link_to  t(".introduce"), home_index_path 
+        = link_to  t(".introduce"), home_index_path
       %li
-        = link_to t(".education_program"), home_index_path 
+        = link_to t(".education_program"), home_index_path
       %li
         = link_to t(".library"), home_index_path
       %li
@@ -30,18 +30,12 @@
         = link_to t(".parent"), home_index_path
       %li
         = link_to t(".student"), home_index_path
-      %li
-        = link_to t(".contact_us"), home_index_path
-    - unless current_user      
+    - unless current_user
       %ul.nav.navbar-nav.navbar-right
         %li
           %a{href: new_user_session_path()}
             %span.glyphicon.glyphicon-user
             = t(".sign_in")
-        %li
-          %a{href: new_user_registration_path()}
-            %span.glyphicon.glyphicon-log-in
-            = t(".sign_up")
     - else
       %ul.nav.navbar-nav.navbar-right
         %li

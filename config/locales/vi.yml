@@ -10,6 +10,13 @@ en:
     new: "Tạo Mới"
     cancel: "Hủy"
     save: "Lưu"
+  news:
+    tin_tuc: "Tin tức - Sự kiện"
+    goc_phu_huynh: "Góc phụ huynh"
+    goc_hoc_sinh: "Góc học sinh"
+    show:
+       bai_viet_lien_quan: "Bài viết liên quan"
+       khong_co_bai_viet_lq: "Chưa có bài viết liên quan."
   layouts:
     header:
       sign_in: "Đăng Nhập"
@@ -36,14 +43,16 @@ en:
       share_facebook: "Facebook"
       share_google_plus: "Google +"
       address_map: "Địa Chỉ Liên hệ"
+      facebook_fanpage: "Facebook Thỏ Ngọc"
+      bd_website: "Sở Giáo Dục & Đào Tạo Bình Dương"
   abouts:
     tuyen_sinh:
       title: "Kế hoạch tuyển sinh năm học %{year}"
-      description: "Trường Mầm non Thỏ Ngọc tốt nhất tại dĩ an, tân uyên tuyển sinh liên tục"
+      description: "Trường Mầm non Thỏ Ngọc tốt nhất tại dĩ an, tân uyên binh duong tuyển sinh liên tục"
       keywords: "tuyen sinh tre tu 12 thang - 36 thang, lien tuc tuyen sinh, tuyen sinh tre mam non"
       thong_bao: "Thông báo tuyển sinh"
       nam_hoc: "Năm học %{year}-%{next_year}"
-      do_tuoi: "Trường Mầm non Thỏ Ngọc thông báo kế hoạch tuyển sinh của nhà trường ở các độ tuổi như sau:"
+      do_tuoi: "Trường Mầm non Tư Thục Thỏ Ngọc Dĩ An thông báo kế hoạch tuyển sinh của nhà trường ở các độ tuổi như sau:"
       doi_tuong: " I. Đối tượng tuyển sinh:"
       do_tuoi_nha_tre: "Nhà trường  tuyển sinh các cháu ở độ tuổi nhà trẻ từ 13 –  36 tháng "
       do_tuoi_mau_giao: " Mẫu giáo 3 – 5 tuổi."

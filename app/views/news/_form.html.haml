@@ -1,0 +1,28 @@
+- preview ||= nil
+- if posts.present?
+  - content = show_content_post(cat)
+  .col-xs-12.col-md-4{id: "#{preview}"}
+    .box-item
+      %i.box-icon-2
+      %h2.box-title.bg-color-1
+        %span.border-color-1
+          %a{href: content[:url]}= content[:message]
+      .box-content
+        .cpost
+          %a{href: root_path()}
+            = image_tag("dinh_duong.jpg", :title => "Dinh dưỡng khi trẻ bị ốm ho, cảm sốt, tiêu chảy", alt: "Dinh duong cho tre bi ho bi om, mon an nhieu dinh duong")
+          %a{href: news_path(posts.first.slug)}
+            %h2.cpost-title= posts.first.title
+          %p.cpost-date= posts.first.created_at.strftime("%d/%m/%Y")
+          .cpost-des
+            - if preview.present?
+              %p= posts.first.preview
+            - else
+              %p= raw posts.first.body
+        - if relative_posts.present?
+          .line-block
+          %ul.cpost-more
+            - relative_posts.each do |post|
+              %li
+                %i.ico-cpost-more
+                %a{href: news_path(post.slug)}= post.preview

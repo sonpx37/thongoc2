@@ -8,7 +8,8 @@ class Admin::NewsController < ApplicationController
   end
 
   def create
-    post = Post.create(news_params)
+    @category = Category.find(params["post"]["category_id"])
+    post = @category.posts.create(news_params)
     if post.errors.empty?
       redirect_to admin_homes_path(), success: t("admin.news.success")
     else
@@ -18,7 +19,7 @@ class Admin::NewsController < ApplicationController
 
   private
     def news_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, :category, :preview)
     end
    def check_admin?
      # redirect_to root_path unless current_user.present? &&current_user.check_admin?

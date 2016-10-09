@@ -1,0 +1,22 @@
+#main-content.col-xs-12.col-md-8
+  .box-item
+    %i.box-icon-7-left
+    %i.box-icon-7-right
+    %h2.box-title.box-page-title.bg-color-1
+      %span.border-color-1
+        %a{href: root_path()} Trường Mầm Non Thỏ Ngọc Dĩ An
+    .box-content
+      .single-content
+        %h1.single-title= @post.title
+        .artitcle-content= raw @post.body
+      .related
+        %h3.related-heading= t(".bai_viet_lien_quan")
+        .related-post
+          - if @posts_relative.present?
+            - @posts_relative.each do |post|
+              %ul
+                %li
+                  %i.icon-fontawesome-webfont-251
+                  %a{href: news_path(post)}= post.preview
+          - else
+            = I18n.t("news.show.khong_co_bai_viet_lq")

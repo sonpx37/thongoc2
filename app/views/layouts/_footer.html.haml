@@ -22,12 +22,9 @@
             #block_links_footer_1.footer-block
               %h4.title_block= t(".share")
               .block_content
-                .fb-page{"data-adapt-container-width" => "true", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/caongua.net/",  "data-width"=>"380", "data-hide-cover"=>"false", "data-show-facepile"=>"false", "data-show-posts"=>"false"}
-  .footer-bottom
-    .container
-      .row
-        .footer-bottom-wrap.clearfix
-          .col-xs-12.wow.animated.fadeInLeft{"data-wow-delay" => "150ms"}
-            .copyright
-              %p
-                Copyright &copy; 2016 Mam non Tho Ngoc
+                .facebook_page.m-d-block
+                  = image_tag "facebook.svg", class: "image-fage-acebook "
+                  %a{href: "https://www.facebook.com/Tr%C6%B0%E1%BB%9Dng-M%E1%BA%A7m-Non-T%C6%B0-Th%E1%BB%A5c-Th%E1%BB%8F-Ng%E1%BB%8Dc-D%C4%A9-An-B%C3%ACnh-D%C6%B0%C6%A1ng-1822222441335012/", target: "_blank"}= t(".facebook_fanpage")
+                .bd_website
+                  %i.fa.fa-book.icon-ebook
+                  %a{href: "http://sgdbinhduong.edu.vn/", target: "_blank"}= t(".bd_website")

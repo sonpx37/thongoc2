@@ -29,6 +29,6 @@
 
   / phan tin tuc thong bao, goc chia se kinh nghiem me va be
   .news-experience.box-content
-    = render template: 'news/tin_tuc'
-    = render template: 'news/phu_huynh'
-    = render template: 'news/hoc_sinh'
+    = render 'news/form', preview: "tin_tuc", posts: @events_posts, relative_posts: @relative_event_posts, cat: SU_KIEN_CAT
+    = render 'news/form', preview: "kn_phu_huynh", posts: @parent_posts, relative_posts: @relative_parent_posts, cat: PHU_HUYNH_CAT
+    = render 'news/form', preview: "hoc_sinh", posts: @students_posts, relative_posts: @relative_student_posts, cat: HOC_SINH_CAT
