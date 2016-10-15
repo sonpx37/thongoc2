@@ -5,4 +5,10 @@ class AboutsController < ApplicationController
               description: t(".description"),
               keywords: t(".keywords")
   end
+
+  def gioi_thieu
+    set_meta_tags title: t(".title"),
+              description: t(".description"),
+              keywords: t(".keywords")
+  end
 end

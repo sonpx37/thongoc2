@@ -1,6 +1,7 @@
 class Admin::NewsController < ApplicationController
- layout "admin"
+ before_action :authenticate_user!
  before_action :check_admin?
+ layout "admin"
 
   def new
     @post = Post.new()
@@ -21,7 +22,14 @@ class Admin::NewsController < ApplicationController
     def news_params
       params.require(:post).permit(:title, :body, :category, :preview)
     end
-   def check_admin?
-     # redirect_to root_path unless current_user.present? &&current_user.check_admin?
-   end
+
+    def check_admin?
+      if current_user.present?
+        unless current_user.is_admin?
+          redirect_to root_path
+        end
+      else
+        redirect_to root_path
+      end
+    end
 end

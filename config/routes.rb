@@ -1,18 +1,21 @@
 Homy::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  get "home/index"
   devise_for :users
-  root to: "home#index"
+  root "home#index"
+
+  resources :home, path:"trang-chu"
+
   resources :conversations do
     resources :messages
   end
 
-  resources :abouts do
+  resources :abouts, path:"thong-tin" do
     collection do
       get :tuyen_sinh
+      get :gioi_thieu
     end
   end
-  resources :news do
+  resources :news, path:"bai-viet" do
     collection do
       get :phu_huynh
       get :hoc_sinh

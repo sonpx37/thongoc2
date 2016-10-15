@@ -19,7 +19,7 @@
       %li.active
         = link_to t('.home_page'), home_index_path
       %li
-        = link_to  t(".introduce"), home_index_path
+        = link_to  t(".introduce"), gioi_thieu_abouts_path
       %li
         = link_to t(".education_program"), home_index_path
       %li
@@ -27,7 +27,7 @@
       %li
         = link_to t(".admissions"), tuyen_sinh_abouts_path
       %li
-        = link_to t(".parent"), home_index_path
+        = link_to t(".parent"), phu_huynh_news_index_path
       %li
         = link_to t(".student"), home_index_path
     - unless current_user
@@ -41,12 +41,6 @@
         %li
           - if current_user.is_admin?
             = link_to t(".admin"), admin_homes_path()
-            - @users.each_with_index do |user, index|
-              %a.link-icon.messages.start-conversation{"data-sid" => current_user.id, "data-rip" => user.id, href: "#"}
-                .inbox
-          - else
-            %a.link-icon.messages.start-conversation{"data-sid" => current_user.id, "data-rip" => User.check_admin?.try(:id), href: "#"}
-              .inbox
         %li
           = link_to t(".profile"), edit_user_registration_path
         %li

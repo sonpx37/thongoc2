@@ -32,8 +32,8 @@
     margin: auto;
     text-shadow: 2px 0 0 #fff,-2px 0 0 #fff,0 2px 0 #fff,0 -2px 0 #fff,1px 1px #fff,-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff;
    .phong_gd{
-      line-height: 21px; 
-      text-align: center; 
+      line-height: 21px;
+      text-align: center;
       color: rgb(61, 97, 198);
       font-weight: 900;
       span{
@@ -41,14 +41,20 @@
       }
     }
     .ten_truong{
-      line-height: 25px; 
-      text-align: center; 
+      line-height: 25px;
+      text-align: center;
       color: rgb(255, 0, 50);
        font-weight: 900;
        span{
         font-size:25px;
        }
     }
+  }
+}
+.education-menu{
+  width: 100%;
+  li{
+    border-bottom: solid 1px #ccc;
   }
 }
 

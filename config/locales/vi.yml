@@ -37,7 +37,7 @@ en:
       contact_us: "Liên Hệ"
       terms_of_service: "Điều Khoản"
       address: "Địa chỉ: 82/24, ấp Bình Đường 1, Dĩ An, Bình Dương (Gần chợ dĩ an 2)"
-      phone_number: "Điện thoại: 01677450261"
+      phone_number: "Điện thoại: 01677.450.261 (Cô Giang)"
       email: "Email: mnthongoc2016@gmail.com"
       share: "Chia Sẻ Liên Kết"
       share_facebook: "Facebook"
@@ -64,6 +64,35 @@ en:
       ngay_nhap_hoc: "Sau khi hoàn tất hồ sơ và đóng học phí, các bé sẽ vào học trong ngày hôm sau."
       ke_hoach_tuyen_sinh: "Trên đây là kế hoạch tuyển sinh của nhà trường, kính thông báo đến các bậc phụ huynh được rõ, rất mong được đón tiếp các quý phụ huynh."
       bo_phan_tuyen_sinh: " BỘ PHẬN TUYỂN SINH "
+    gioi_thieu:
+      thong_bao: "Giới Thiệu Về Trường Mầm Non Thỏ Ngọc"
+      title: "Gioi thieu truong mam non tu thuc tho ngoc di an,tan uyen binh duong"
+      description: "lien tuc tuyen sinh,mam non tot,chuyen nghiep nhat di an, tan uyen, binh duong, co giao tan tam, khong danh tre"
+      keywords: "tuyet doi khong danh tre, yeu thuong tre em di an, tan uyen, binh duong"
+      greeting: "Kính thưa Quý phụ huynh!"
+      content:
+        "Lời đầu tiên trường Mầm non Thỏ Ngọc xin gởi tới quý phụ huynh lời chúc sức khỏe và lời chào trân trọng nhất.</br>
+        Tuổi mầm non là bậc thang đầu tiên, là nền móng cho những bậc thang tiếp theo của cuộc đời. Hiện nay, có rất nhiều trường mầm non tư thục được mở ra, làm cha mẹ thì chúng ta luôn mong muốn con mình có một môi trường vui chơi – học tập thân thiện và tự nhiên, sự tự tin của trẻ, cách trẻ ứng xử và hiểu biết của chúng về thế giới xung quanh phụ thuộc rất nhiều vào chất lượng môi trường giáo dục mầm non và mối quan hệ gần gũi giữa Cô và Cháu. Đến với trường Mầm non Thỏ Ngọc, con bạn sẽ được phát triển tối đa về trí tuệ và thể chất:</br>
+            <span class='l-pad-small'> -   Phát triển nhận thức và kỹ năng học tập.</br>
+            <span class='l-pad-small'> -   Phát triển thể chất - sức khoẻ và kỹ năng vận động.</br>
+            <span class='l-pad-small'> -   Phát triển ngôn ngữ và giao tiếp xã hội.</br>
+            <span class='l-pad-small'> -   Phát triển tình cảm và kỹ năng sống.</br>
+            <span class='l-pad-small'> -   Chuẩn bị sẵn sàng đến việc học tập tốt sau này.</br>
+        Trường Mầm non Thỏ Ngọc hội tụ đầy đủ các yếu tố mà quý phụ huynh mong muốn để lựa chọn trường cho con:</br>
+        Về đội ngũ cán bộ, giáo viên, bảo mẫu, nhân viên:</br>
+            <span class='l-pad-small'>- Có trình độ chuyên môn, nghiệp vụ vững vàng.</span></br>
+            <span class='l-pad-small'>- Có tinh thần nhiệt huyết, tận tụy với nghề, yêu trẻ như con của mình.</br>
+            <span class='l-pad-small'>- Thường xuyên cập nhật những kiến thức mới nhất để trẻ có thể lĩnh hội kịp thời.</br>
+            <span class='l-pad-small'>- Làm thủ tục nhập học vào lớp 1 cho các bé.</br>
+        Về điều kiện cơ sở vật chất:</br>
+            <span class='l-pad-small'> - Lớp học thoáng mát, có camera trực tuyến.</br>
+            <span class='l-pad-small'> - Sân chơi rộng rãi, thoáng mát với đầy đủ các đồ chơi theo tiêu chuẩn cao.</br>
+            <span class='l-pad-small'> - Các lớp được trang bị đầy đủ giáo cụ và đồ chơi an toàn, phù hợp với đặc điểm tâm lý trẻ.</br>
+        Về chế độ chăm sóc – dinh dưỡng:</br>
+            <span class='l-pad-small'> - Chế độ ăn uống đầy đủ, đảm bảo vệ sinh an toàn thực phẩm.</br>
+            <span class='l-pad-small'> - Với tiêu chí “ Con của bạn cũng là con của chúng tôi” trên cơ sở lấy yêu thương làm nền tảng, chúng tôi tin rằng hệ thống trường Mầm non Thỏ Ngọc là sự lựa chọn tin cậy nhất của các bậc cha mẹ dành cho con của mình.</br>
+        Chúng tôi rất hân hạnh được đón tiếp và mong muốn tiếp tục nhận được sự quan tâm ủng hộ của quý phụ huynh."
+      thank_you: "Trân trọng cảm ơn!"
   admin:
     homes:
       tin_tuc: "Tin Tức"

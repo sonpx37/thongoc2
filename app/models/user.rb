@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   has_many :posts, dependent: :destroy
   has_many :conversations, :foreign_key => :sender_id
 
-  def self.check_admin?
-    User.where(is_admin: true).first
+  def admin?
+    self.is_admin
   end
 end
