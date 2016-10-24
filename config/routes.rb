@@ -2,7 +2,7 @@ Homy::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   root "home#index"
-
+  get '/robots.:format' => 'pages#robots'
   resources :home, path:"trang-chu"
 
   resources :conversations do
