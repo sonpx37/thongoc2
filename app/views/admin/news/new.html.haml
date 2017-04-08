@@ -1,11 +1,11 @@
 = form_for @post, url: {:controller => "news", :action => "create"}, method: "post" do |f|
-  = label_tag "Tiêu Đề", nil,  class: "new_title"
+  = label_tag t("news.tieu_de"), nil,  class: "new_title"
   = f.text_field :title
-  = label_tag "Chuyên Mục", nil,  class: "new_category m-d-block"
+  = label_tag t("news.chuyen_muc"), nil,  class: "new_category m-d-block"
   = f.select :category_id, options_from_collection_for_select(@categories, "id", "cat_name"), class: "m-d-block m-bottom-small"
-  = label_tag "Miêu Tả", nil,  class: "new_title m-d-block m-top-small"
+  = label_tag t("news.mieu_ta"), nil,  class: "new_title m-d-block m-top-small"
   = f.text_field :preview
-  = label_tag "Nội Dung", nil, class: "new_content m-d-block m-top-small"
+  = label_tag t("news.noi_dung"), nil, class: "new_content m-d-block m-top-small"
   = f.cktext_area :body, :class => "form-control"
   .panel-footer
   .clearfix.align-r.m-bottom-small

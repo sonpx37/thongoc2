@@ -17,6 +17,10 @@ en:
     show:
        bai_viet_lien_quan: "Bài viết liên quan"
        khong_co_bai_viet_lq: "Chưa có bài viết liên quan."
+    tieu_de: "Tiêu Đề"
+    chuyen_muc: "Chuyên Mục"
+    mieu_ta: "Miêu Tả"
+    noi_dung: "Nội Dung"
   layouts:
     header:
       sign_in: "Đăng Nhập"

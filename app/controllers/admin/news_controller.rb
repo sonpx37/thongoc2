@@ -1,7 +1,11 @@
 class Admin::NewsController < ApplicationController
- before_action :authenticate_user!
- before_action :check_admin?
- layout "admin"
+  before_action :authenticate_user!
+  before_action :check_admin?
+  layout "admin"
+
+  def index
+    @posts = Post.includes(:category).paginate(:page => params[:page], :per_page => 5)
+  end
 
   def new
     @post = Post.new()

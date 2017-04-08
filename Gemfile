@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.1.8"
+ruby "2.3.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.13'
 
@@ -43,6 +43,8 @@ gem 'meta-tags'
 gem 'private_pub'
 gem 'thin'
 gem "font-awesome-rails"
+gem 'will_paginate', '~> 3.1.0'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

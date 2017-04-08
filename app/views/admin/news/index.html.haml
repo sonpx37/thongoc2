@@ -1,2 +1,20 @@
 - unless params[:type].present?
-  = link_to  t("btn.new"), new_admin_news_path(type: params[:type]), class: "btn btn-primary btn-news"
+  = link_to  t("btn.new"), new_admin_news_path(type: params[:type]), class: "btn btn-primary btn-news m-bottom-small"
+%table.table.table-bordered
+  %thead
+    %tr
+      %th{rowspan: '1', width: "20%"}= t("news.tieu_de")
+      %th{rowspan: '1', width: "20%"}= t("news.chuyen_muc")
+      %th{colspan: '1', width: "30%"}= t("news.mieu_ta")
+      %th{colspan: '1', width: "30%"}= t("news.noi_dung")
+      %th{colspan: '1', width: "30%"}= t("reports.approved")
+  %tbody
+    - if @posts.present?
+      - @posts.each do |post|
+        %tr
+          %td= post.title
+          %td= post.category.cat_name
+          %td= post.preview
+          %td= raw(post.body)
+          %td= t('reports.actions')
+= will_paginate @posts
