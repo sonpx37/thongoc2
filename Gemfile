@@ -55,7 +55,7 @@ group :development do
   gem 'byebug', '~> 8.2', '>= 8.2.2'
 end
 
-gem 'ckeditor', git: 'https://github.com/sonpx37/ckeditor-google-drive.git', branch: "master"
+gem 'ckeditor', path: "vendor/gems/ckeditor-google-drive"
 gem 'paperclip-googledrive-new', '~> 1.0'
 gem 'google_drive', '~> 0.3.10'
 gem 'google-api-client', '0.8.2', require: 'google/api_client'
